@@ -310,7 +310,7 @@ func readTFrame(b []byte) (string, error) {
 	if err != nil {
 		return "", err
 	}
-	return strings.Join(strings.Split(txt, string(singleZero)), ""), nil
+	return strings.Join(strings.Split(txt, string(singleZero)), ";"), nil
 }
 
 const (
